@@ -23,8 +23,3 @@ model as a reCAPTCHA site key), not a secret credential.
 
 Static site, zero build step. Deploy target: Vercel (import this repo on
 vercel.com, no configuration needed).
-
----
-
-**Note:** one stat on the page (`Audit sprints from $[PRICE]`) is a
-placeholder pending a real number.
