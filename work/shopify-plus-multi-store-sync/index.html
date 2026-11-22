@@ -1235,8 +1235,15 @@
     .hero-copy{ max-width:100%; margin-right:0; margin-left:0; }
     .hero h1{ font-size:48px; }
     .hero-portrait{
-      position:static;
-      order:-1;
+      /* Must stay a positioned ancestor (not static) at this width: the
+         .hero-badge elements inside it are position:absolute and sized in
+         percentages against it. Switching this to static made them resolve
+         against .hero-grid instead (the badge-cert/.badge-status percentages
+         are tuned for the portrait's own box), which is why the cert badge
+         landed on the face and the status badge landed behind the CTA
+         button on mobile. .hero-portrait is already first in the DOM, so it
+         still renders above .hero-copy without needing flex `order`. */
+      position:relative;
       width:100%;
       max-width:560px;
       height:clamp(380px, 66vw, 560px);
@@ -1246,9 +1253,13 @@
     }
     .stats-grid{ grid-template-columns:repeat(2,1fr); gap:var(--sp-6);}
     .services-grid{ grid-template-columns:repeat(2,1fr); }
+    /* Both reverse and non-reverse rows collapse to one column here, and
+       both already have feature-text before feature-visual in the DOM, so
+       no order override is needed. The old override flipped only reverse
+       rows' visual above its own text, which glued it to the bottom of the
+       previous row's visual across the row border -- reading as "two demos"
+       in the row above and "no demo" in the row whose heading follows. */
     .feature-row, .feature-row.reverse{ grid-template-columns:1fr; }
-    .feature-row.reverse .feature-visual{ order:1;}
-    .feature-row.reverse .feature-text{ order:2;}
     .about-grid{ grid-template-columns:1fr; }
     .about-visual{ min-height:340px; }
   }
