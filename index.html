@@ -1660,7 +1660,7 @@
           <div class="visual-mock">
             <div class="vm-chrome" aria-hidden="true"><span></span><span></span><span></span><span class="vm-label">publishing &amp; translation manager · live</span></div>
             <div class="vm-image-crop">
-              <video autoplay muted loop playsinline preload="auto" aria-label="Screen recording of a Shopify Plus publishing and translation manager syncing product content across storefronts">
+              <video autoplay muted loop playsinline preload="metadata" poster="assets/shopify-plus-sync-demo-poster.jpg" data-lazy-video aria-label="Screen recording of a Shopify Plus publishing and translation manager syncing product content across storefronts">
                 <source src="assets/shopify-plus-sync-demo.webm" type="video/webm">
                 <source src="assets/shopify-plus-sync-demo.mp4" type="video/mp4">
               </video>
@@ -1689,7 +1689,7 @@
           <div class="visual-mock">
             <div class="vm-chrome" aria-hidden="true"><span></span><span></span><span></span><span class="vm-label">ad creative engine · benchmark</span></div>
             <div class="vm-image-crop">
-              <video autoplay muted loop playsinline preload="auto" aria-label="Screen recording of the ad creative engine interface converting a product photo into a Meta video ad, with video model, motion style, and camera move controls">
+              <video autoplay muted loop playsinline preload="none" poster="assets/ad-creative-engine-demo-poster.jpg" data-lazy-video aria-label="Screen recording of the ad creative engine interface converting a product photo into a Meta video ad, with video model, motion style, and camera move controls">
                 <source src="assets/ad-creative-engine-demo.webm" type="video/webm">
                 <source src="assets/ad-creative-engine-demo.mp4" type="video/mp4">
               </video>
@@ -1718,7 +1718,7 @@
           <div class="visual-mock">
             <div class="vm-chrome" aria-hidden="true"><span></span><span></span><span></span><span class="vm-label">youtube news automation · n8n</span></div>
             <div class="vm-image-crop">
-              <video autoplay muted loop playsinline preload="auto" aria-label="Screen recording of a self-hosted n8n workflow automating daily YouTube news video generation and publishing">
+              <video autoplay muted loop playsinline preload="none" poster="assets/youtube-automation-demo-poster.jpg" data-lazy-video aria-label="Screen recording of a self-hosted n8n workflow automating daily YouTube news video generation and publishing">
                 <source src="assets/youtube-automation-demo.webm" type="video/webm">
                 <source src="assets/youtube-automation-demo.mp4" type="video/mp4">
               </video>
@@ -1747,7 +1747,7 @@
           <div class="visual-mock">
             <div class="vm-chrome" aria-hidden="true"><span></span><span></span><span></span><span class="vm-label">competitor watch · internal tool</span></div>
             <div class="vm-image-crop">
-              <video autoplay muted loop playsinline preload="auto" aria-label="Screen recording of the Competitor Watch tool, entering a store URL and up to three competitor URLs to build a competitive intelligence report">
+              <video autoplay muted loop playsinline preload="none" poster="assets/competitor-watch-demo-poster.jpg" data-lazy-video aria-label="Screen recording of the Competitor Watch tool, entering a store URL and up to three competitor URLs to build a competitive intelligence report">
                 <source src="assets/competitor-watch-demo.webm" type="video/webm">
                 <source src="assets/competitor-watch-demo.mp4" type="video/mp4">
               </video>
@@ -1776,7 +1776,7 @@
           <div class="visual-mock">
             <div class="vm-chrome" aria-hidden="true"><span></span><span></span><span></span><span class="vm-label">pulse-bi · dashboard demo</span></div>
             <div class="vm-image-crop">
-              <video autoplay muted loop playsinline preload="auto" aria-label="Screen recording of the Pulse BI dashboard showing unified revenue, ad spend, and order data using demonstration data">
+              <video autoplay muted loop playsinline preload="none" poster="assets/Pulse-poster.jpg" data-lazy-video aria-label="Screen recording of the Pulse BI dashboard showing unified revenue, ad spend, and order data using demonstration data">
                 <source src="assets/Pulse.webm" type="video/webm">
                 <source src="assets/Pulse.mp4" type="video/mp4">
               </video>
@@ -1805,7 +1805,7 @@
           <div class="visual-mock">
             <div class="vm-chrome" aria-hidden="true"><span></span><span></span><span></span><span class="vm-label">mileflying · content calendar · live</span></div>
             <div class="vm-image-crop">
-              <video autoplay muted loop playsinline preload="auto" aria-label="Screen recording of the MileFlying content calendar interface and its AI-generated content hook bank">
+              <video autoplay muted loop playsinline preload="none" poster="assets/mileflying-demo-poster.jpg" data-lazy-video aria-label="Screen recording of the MileFlying content calendar interface and its AI-generated content hook bank">
                 <source src="assets/mileflying-demo.webm" type="video/webm">
                 <source src="assets/mileflying-demo.mp4" type="video/mp4">
               </video>
@@ -2133,6 +2133,30 @@
       }
     });
   });
+
+  // Demo video lazy loader: every [data-lazy-video] starts at preload="none"
+  // or "metadata" (set inline per-video) so the page doesn't try to buffer
+  // all 6 clips at once on load -- that's what was making some of them only
+  // appear much later. A single IntersectionObserver with a 600px lookahead
+  // margin switches each one to preload="auto" and calls .load() well before
+  // it scrolls into view, so it has time to buffer and autoplay on arrival.
+  // Falls back to loading everything immediately if IntersectionObserver
+  // isn't available.
+  const lazyVideos = document.querySelectorAll('video[data-lazy-video]');
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver(function(entries, observer){
+      entries.forEach(function(entry){
+        if (!entry.isIntersecting) return;
+        const video = entry.target;
+        video.preload = 'auto';
+        video.load();
+        observer.unobserve(video);
+      });
+    }, { rootMargin: '600px 0px' });
+    lazyVideos.forEach(function(video){ videoObserver.observe(video); });
+  } else {
+    lazyVideos.forEach(function(video){ video.preload = 'auto'; video.load(); });
+  }
 </script>
 
 <!-- Vercel Web Analytics (static-site snippet, no npm/build step needed).
