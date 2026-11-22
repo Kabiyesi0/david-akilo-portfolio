@@ -1,0 +1,57 @@
+# KiloBuilds
+
+> Custom Claude Code automations for D2C Shopify Plus brands and performance
+> agencies: catalog sync, ad creative pipelines, and internal tools, deployed
+> directly into your own stack in days, not months.
+
+KiloBuilds is run by David Akilo, an AI Systems Engineer based remotely in
+Lagos, Nigeria. Audit sprints start from $150. Clients own 100% of the code
+and infrastructure that gets built — everything deploys onto the client's own
+accounts (GitHub, Vercel, Supabase, n8n, or a cloud VPS) using the client's own
+API keys. No vendor lock-in, no proprietary platform fee.
+
+## Services
+
+- Multi-Store Catalog & Translation Pipelines: https://kilobuilds.com/services/multi-store-catalog-translation/
+- AI Ad Creative Engines: https://kilobuilds.com/services/ai-ad-creative-engines/
+- Custom SaaS Replacements & Internal Tools: https://kilobuilds.com/services/custom-saas-replacements-internal-tools/
+- Competitor Intelligence & Content Ops: https://kilobuilds.com/services/competitor-intelligence-content-ops/
+
+## Work (case studies)
+
+Client names are withheld by request on the client-engagement case studies
+below; the engagement details and numbers themselves reflect real work. Pulse
+and MileFlying are David's own personal/demo builds running on demonstration
+data, not real named clients — labeled as such wherever they appear.
+
+- Shopify Plus multi-store catalog & translation sync (real client, anonymized): https://kilobuilds.com/work/shopify-plus-multi-store-sync/
+- Meta video ad creative engine (real client, anonymized): https://kilobuilds.com/work/meta-video-ad-creative-engine/
+- End-to-end daily YouTube news automation on n8n (real client, anonymized): https://kilobuilds.com/work/youtube-news-automation-n8n/
+- Competitor Watch: ad library & launch intelligence (real client, anonymized): https://kilobuilds.com/work/competitor-watch-ad-intelligence/
+- Pulse: multi-channel BI dashboard (demo product, demonstration data): https://kilobuilds.com/work/pulse/
+- MileFlying: content calendar & hook generator (demo product, demonstration data): https://kilobuilds.com/work/mileflying/
+
+## Process
+
+An Audit & Build Sprint ($150) is a focused, 3-to-5-day technical sprint
+built around one real workflow bottleneck. It includes an audit of current
+tools and data flow, a mapped automation architecture, and a working
+prototype wired directly into the client's stack — plus a fixed-price build
+quote for full production if wanted, with the $150 credited toward it.
+Larger, multi-system builds are scoped per project. Ongoing/retainer
+engagements are available after the initial sprint.
+
+## Contact
+
+- Form: https://kilobuilds.com/#Contact
+- Email: davidakilo@kilobuilds.com
+- LinkedIn: https://linkedin.com/in/davidoloruntobiakilo
+- GitHub: https://github.com/Kabiyesi0
+- Upwork (Top Rated, 100% Job Success): https://www.upwork.com/freelancers/~01886cb305472933fc?mp_source=share
+
+## Credentials
+
+- Claude Code 101 (Anthropic): https://verify.skilljar.com/c/3n7x7xjfmudd
+- Claude Code in Action (Anthropic): https://verify.skilljar.com/c/pm5q3heivezz
+
+Full details, FAQ, and complete case-study copy: https://kilobuilds.com/llms-full.txt
