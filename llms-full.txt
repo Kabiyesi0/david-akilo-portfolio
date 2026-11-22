@@ -117,8 +117,7 @@ third-party API fees.
 
 ### Pulse's multi-channel reporting, without the spreadsheet
 https://kilobuilds.com/work/pulse/
-Tags: BI dashboard, Reporting — Public Demo · Demonstration Data (not a real
-named client)
+Tags: BI dashboard, Reporting — Public Demo · Demonstration Data
 Killed the manual multi-channel spreadsheet pulled together by hand from ad
 platforms, Shopify, and email. Replaced it with a single dashboard that
 refreshes itself, so leadership sees live numbers instead of waiting on a
@@ -130,7 +129,6 @@ report each Monday. Results shown are from demonstration data.
 ### MileFlying's content calendar & hook generator
 https://kilobuilds.com/work/mileflying/
 Tags: Competitor intel, Content planning — Public Demo · Demonstration Data
-(not a real named client)
 A planning tool that tracks competitor content and status across formats:
 Studio, Cell Phone, Green Screen, Carousel, and generates a bank of tested
 hook angles per post, so the calendar never runs dry. Results shown are from
