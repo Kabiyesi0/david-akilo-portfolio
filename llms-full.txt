@@ -15,7 +15,7 @@ the team hours every week, and ships a working system the client owns 100%.
 Identity / sameAs:
 - LinkedIn: https://linkedin.com/in/davidoloruntobiakilo
 - GitHub: https://github.com/Kabiyesi0
-- Upwork (Top Rated, 100% Job Success): https://www.upwork.com/freelancers/~01886cb305472933fc?mp_source=share
+- Upwork (Top Rated, 100% Job Success): https://www.upwork.com/freelancers/~01886cb305472933fc
 
 Credentials (Anthropic, verified via Skilljar):
 - Claude Code 101: https://verify.skilljar.com/c/3n7x7xjfmudd
@@ -54,8 +54,7 @@ $150.
 
 Client names are withheld by request on real client engagements; the
 engagement details, metrics, and numbers themselves reflect real work. Pulse
-and MileFlying are David's own personal/demo builds running on demonstration
-data, not real named clients.
+and MileFlying are public demos running on demonstration data.
 
 ### Keeping a Swedish heritage retailer in sync across three storefronts
 https://kilobuilds.com/work/shopify-plus-multi-store-sync/
@@ -202,4 +201,4 @@ changed, when, and in which store.
 - Email: davidakilo@kilobuilds.com
 - LinkedIn: https://linkedin.com/in/davidoloruntobiakilo
 - GitHub: https://github.com/Kabiyesi0
-- Upwork: https://www.upwork.com/freelancers/~01886cb305472933fc?mp_source=share
+- Upwork: https://www.upwork.com/freelancers/~01886cb305472933fc
