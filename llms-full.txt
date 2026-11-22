@@ -190,8 +190,7 @@ volume), with optional monthly retainer support only if you want ongoing
 feature additions.
 
 Q: How do you sync and translate products across multiple Shopify Plus
-storefronts safely? [DRAFT — pending the site owner's final review, not yet
-confirmed as final wording]
+storefronts safely?
 A: Each store is connected with its own authorized access. AI-generated
 translations land in an approval queue, and nothing is written to a live
 store until a person signs off. Every publish is logged, so you can see what
