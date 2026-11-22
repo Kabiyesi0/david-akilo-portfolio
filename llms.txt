@@ -21,8 +21,7 @@ API keys. No vendor lock-in, no proprietary platform fee.
 
 Client names are withheld by request on the client-engagement case studies
 below; the engagement details and numbers themselves reflect real work. Pulse
-and MileFlying are David's own personal/demo builds running on demonstration
-data, not real named clients — labeled as such wherever they appear.
+and MileFlying are public demos running on demonstration data.
 
 - Shopify Plus multi-store catalog & translation sync (real client, anonymized): https://kilobuilds.com/work/shopify-plus-multi-store-sync/
 - Meta video ad creative engine (real client, anonymized): https://kilobuilds.com/work/meta-video-ad-creative-engine/
@@ -47,7 +46,7 @@ engagements are available after the initial sprint.
 - Email: davidakilo@kilobuilds.com
 - LinkedIn: https://linkedin.com/in/davidoloruntobiakilo
 - GitHub: https://github.com/Kabiyesi0
-- Upwork (Top Rated, 100% Job Success): https://www.upwork.com/freelancers/~01886cb305472933fc?mp_source=share
+- Upwork (Top Rated, 100% Job Success): https://www.upwork.com/freelancers/~01886cb305472933fc
 
 ## Credentials
 
