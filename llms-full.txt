@@ -1,0 +1,206 @@
+# KiloBuilds — full reference
+
+This is the expanded reference file for AI assistants and crawlers. See
+https://kilobuilds.com/llms.txt for the condensed version.
+
+## Who
+
+KiloBuilds was founded by David Akilo, an AI Systems Engineer building
+production automations for D2C brands and performance agencies, based
+remotely in Lagos, Nigeria (UTC+1). Instead of selling 40-page transformation
+decks, KiloBuilds sits inside the client's actual stack (Shopify Plus, Meta
+Ads, Klaviyo, Next.js, Supabase, n8n), finds the repetitive workflow costing
+the team hours every week, and ships a working system the client owns 100%.
+
+Identity / sameAs:
+- LinkedIn: https://linkedin.com/in/davidoloruntobiakilo
+- GitHub: https://github.com/Kabiyesi0
+- Upwork (Top Rated, 100% Job Success): https://www.upwork.com/freelancers/~01886cb305472933fc?mp_source=share
+
+Credentials (Anthropic, verified via Skilljar):
+- Claude Code 101: https://verify.skilljar.com/c/3n7x7xjfmudd
+- Claude Code in Action: https://verify.skilljar.com/c/pm5q3heivezz
+
+## Services
+
+### Multi-Store Catalog & Translation Pipelines
+https://kilobuilds.com/services/multi-store-catalog-translation/
+Keep product copy, variants, metafields, and pricing synchronized across
+regional Shopify Plus storefronts with AI-assisted translation and mandatory
+human approval queues.
+
+### AI Ad Creative Engines
+https://kilobuilds.com/services/ai-ad-creative-engines/
+Turn static product photography into multi-shot, ready-to-run Meta video ads
+using automated prompt engineering and benchmarked video models.
+
+### Custom SaaS Replacements & Internal Tools
+https://kilobuilds.com/services/custom-saas-replacements-internal-tools/
+Replace $300 to $500/month single-purpose Shopify apps and Frankenstein
+spreadsheets with private, lightweight tools hosted on the client's own
+infrastructure.
+
+### Competitor Intelligence & Content Ops
+https://kilobuilds.com/services/competitor-intelligence-content-ops/
+Automated Meta Ad Library tracking, storefront launch monitoring, and
+structured content planning engines built around the client's creative team's
+workflow.
+
+All of the above are built as Claude Code agents wired directly into the
+client's stack, not a chatbot bolted onto the front end. Audit sprints from
+$150.
+
+## Work (case studies)
+
+Client names are withheld by request on real client engagements; the
+engagement details, metrics, and numbers themselves reflect real work. Pulse
+and MileFlying are David's own personal/demo builds running on demonstration
+data, not real named clients.
+
+### Keeping a Swedish heritage retailer in sync across three storefronts
+https://kilobuilds.com/work/shopify-plus-multi-store-sync/
+Tags: Multi-store sync, Translation pipeline — Production · Live
+Client: Swedish Heritage DTC Brand (via Stockholm Agency Partner)
+Built a custom translation and catalog publishing platform managing 1,756
+products across three live Shopify Plus stores (US, Norway, and B2B).
+Replaced manual copy-pasting with AI-drafted Swedish-to-English and
+Swedish-to-German translations inside a side-by-side human approval editor.
+- Eliminated 300+ hours of manual translation and store-to-store data entry
+- One-click publishing syncs variants, images, inventory, and metafields with
+  retry queues and error logs
+- Strict JSON schema validation and mandatory human sign-off before any copy
+  goes live
+
+### An automated Meta video ad creative engine
+https://kilobuilds.com/work/meta-video-ad-creative-engine/
+Tags: Ad creative, Meta video — Production · Live
+Client: Performance Marketing Agency (Stockholm)
+Engineered an end-to-end creative production pipeline that converts static
+product photos into multi-shot Meta video ads (wide to close-up).
+Benchmarked leading video models (Seedance vs. Kling) on cost, latency, and
+visual consistency before production rollout.
+- Automated prompt generation via Claude turns single SKU images into
+  structured multi-shot video briefs
+- Standardized model routing balances generation cost against visual
+  fidelity
+- Built directly for media buyers to test creative variations without
+  waiting weeks on external editors
+
+### End-to-end daily YouTube news automation (n8n)
+https://kilobuilds.com/work/youtube-news-automation-n8n/
+Tags: n8n, Autonomous publishing — Production · Live
+Stack: n8n, FFmpeg, Kokoro TTS, Python, Google Trends, VPS
+Provisioned a dedicated VPS and engineered a fully autonomous daily YouTube
+publishing pipeline on self-hosted n8n. Every day, the workflow pulls
+trending topics from Google Trends, drafts structured news scripts,
+synthesizes natural voiceovers, assembles finished video cuts
+programmatically, and publishes directly to YouTube without manual editing.
+- Automated daily ingestion of Google Trends data into structured,
+  brand-safe video scripts
+- Programmatic audio and video assembly using Kokoro TTS and FFmpeg on a
+  self-hosted VPS
+- Zero-touch daily YouTube upload scheduling with automated error handling
+  and retries
+
+### Competitor Watch: ad library & launch intelligence
+https://kilobuilds.com/work/competitor-watch-ad-intelligence/
+Tags: Competitor intel, Ad Library — Internal build · Active
+Client: Internal Agency Lead-Gen Tool
+Built an automated competitive intelligence tool that reads public Meta Ad
+Library pages and competitor storefronts to surface long-running winning
+ads, creative rebuild checklists, and newly dropped SKUs without recurring
+third-party API fees.
+- Zero paid API calls in default production mode
+- Surfaces longest-running competitor ads with days-live tracking and
+  creative breakdown checklists
+- Tracks competitor storefront catalogs to flag new product launches
+  automatically
+
+### Pulse's multi-channel reporting, without the spreadsheet
+https://kilobuilds.com/work/pulse/
+Tags: BI dashboard, Reporting — Public Demo · Demonstration Data (not a real
+named client)
+Killed the manual multi-channel spreadsheet pulled together by hand from ad
+platforms, Shopify, and email. Replaced it with a single dashboard that
+refreshes itself, so leadership sees live numbers instead of waiting on a
+report each Monday. Results shown are from demonstration data.
+- Consolidated four data sources into one live report
+- Removed a recurring weekly manual reporting task entirely
+- Built on the client's existing stack, no new platform to learn
+
+### MileFlying's content calendar & hook generator
+https://kilobuilds.com/work/mileflying/
+Tags: Competitor intel, Content planning — Public Demo · Demonstration Data
+(not a real named client)
+A planning tool that tracks competitor content and status across formats:
+Studio, Cell Phone, Green Screen, Carousel, and generates a bank of tested
+hook angles per post, so the calendar never runs dry. Results shown are from
+demonstration data.
+- 10-hook bank generated per content slot, ranked by pattern
+- Full month view with format and upload status at a glance
+- One-click status tracking from upcoming to uploaded
+
+## FAQ
+
+Q: Does this replace our existing tools or developers?
+A: No. Every system we build works alongside what you already have. It's
+wired directly into your existing stack, Shopify, your ad platforms, your
+dev team's tools, not a replacement for a dev team or a rip-and-replace of
+tools you already rely on.
+
+Q: How fast do projects typically ship?
+A: An Audit & Build Sprint ships the first working system inside the sprint
+itself, that's the point of it. Larger, multi-system builds take longer and
+get scoped per project once we know exactly what needs to be automated.
+
+Q: Are ongoing or retainer engagements available?
+A: Yes. Past the initial sprint, ongoing and retainer engagements are
+available for teams who want a standing engineer on their automation
+systems rather than a one-off build.
+
+Q: What tech stacks do you support?
+A: We build primarily into Shopify, Klaviyo, Meta Ads, and n8n, with systems
+hosted on Vercel and Supabase, and Claude Code as the automation engine
+underneath. If your stack looks different, tell us what it is, the point is
+wiring into what you already run, not migrating you to something new.
+
+Q: What happens after the audit sprint ships?
+A: You own what's built, it keeps running without us in the room. From
+there, most clients either scope a second system, or move to an ongoing
+retainer if there's a steady pipeline of automation work.
+
+Q: What does the $150 audit include?
+A: It is a focused, 3-to-5-day technical sprint built around one real
+workflow bottleneck in your business, not a generic strategy deck. We audit
+your current tools and data flow, map out the exact automation architecture
+(including API requirements and recurring hosting costs), and build a
+working prototype or live proof-of-concept wired directly into your stack.
+At the end of the sprint, you walk away with the working prototype, a clear
+system diagram, and a fixed-price build quote if you want us to take it to
+full production, with your $150 credited toward the full build.
+
+Q: Who owns the code and infrastructure after a build?
+A: You own 100% of everything. We deploy all code, databases, and workflows
+directly onto your own accounts (GitHub, Vercel, Supabase, n8n, or cloud VPS)
+using your own API keys, and hand over full repository access and handover
+documentation on completion. There is zero vendor lock-in, no proprietary
+platform fee, and no ongoing markup from us. You only pay your own
+lightweight hosting and API usage (typically $0 to $45/month depending on
+volume), with optional monthly retainer support only if you want ongoing
+feature additions.
+
+Q: How do you sync and translate products across multiple Shopify Plus
+storefronts safely? [DRAFT — pending the site owner's final review, not yet
+confirmed as final wording]
+A: Each store is connected with its own authorized access. AI-generated
+translations land in an approval queue, and nothing is written to a live
+store until a person signs off. Every publish is logged, so you can see what
+changed, when, and in which store.
+
+## Contact
+
+- Form: https://kilobuilds.com/#Contact
+- Email: davidakilo@kilobuilds.com
+- LinkedIn: https://linkedin.com/in/davidoloruntobiakilo
+- GitHub: https://github.com/Kabiyesi0
+- Upwork: https://www.upwork.com/freelancers/~01886cb305472933fc?mp_source=share
